@@ -120,7 +120,7 @@ font-family:'Roboto', sans-serif;
 				top: 0;
 				right: 0;
 				width: 10rem;
-				height: inherit;
+				height: 50px;
 				border-bottom-right-radius: 0.5rem;
 				border-top-right-radius: 0.5rem;
 				display: inline-flex;
@@ -133,6 +133,10 @@ font-family:'Roboto', sans-serif;
 					appearance: none;
 					background: none;
 					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					
 
 					&:last-of-type:before {
 						content:'';
@@ -142,18 +146,28 @@ font-family:'Roboto', sans-serif;
 						top: 10px;
 						left: 0;
 						background: $color-bg;
+						
 					}
 
-					.todo__btn--complete {
+					svg {
+						width: 2.2rem;
+						height: 2.2rem;
+						cursor: hand;
+					}
+
+					
+				}
+				
+				&--del {
+
+
+				}
+					
+				&--complete {
 						
 
-					}
+				}
 
-					.todo__btn--del {
-
-
-					}
-				}	
 			}
 		}
 	}
