@@ -87,7 +87,8 @@ button {
         width: 100%;
         font-size: 1.4rem;
         height: 50px;
-        display: table;
+        display: flex;
+        flex-direction: column;
         li {
             font-size: 1.4rem;
             font-weight: 500;
